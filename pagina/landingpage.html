@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Presentación TOBE</title>
 </head>
 <body>
     <main>
-        <section>
+        <section id="1">
             <div id="fondo-s1"></div>
             <div id="text-s1">
                 <span><span class="text-s1-book">Una </span>agencia</span>
@@ -19,12 +20,13 @@
             </div>
             <div id="logo-s1"></div>
             <a href="#2" class="scroll"></a>
+            <a href="#" class="scroll-fixed"></a>
         </section>
         <section id="2">
-            <div id="fondo-s2"></div>
-            <div id="cubo-s2"></div>
+            <div id="fondo-s2" data-aos-delay="500" data-aos="fade-left"></div>
+            <div id="cubo-s2" data-aos-delay="2000" data-aos="zoom-in"></div>
             <div id="fondo-mujer-s2"></div>
-            <div id="text-s2">
+            <div id="text-s2" data-aos-delay="1500" data-aos="fade-right">
                 <span>NOSOTROS</span>
                 <span class="text-s2-thin">
                     dejamos de ser una agencia de publicidad para
@@ -35,10 +37,10 @@
                 </span>
             </div>
         </section>
-        <section>
-            <div id="fondo-s3"></div>
+        <section id="3">
+            <div id="fondo-s3" data-aos-delay="500" data-aos="fade-right"></div>
             <div id="fondo-grafico-s3"></div>
-            <div id="text-s3">
+            <div id="text-s3" data-aos-delay="1500" data-aos="fade-left">
                 <span>USTEDES</span>
                 <span class="text-s3-thin">
                     Son un cliente que nos ha permitido <span class="text-s3-bold">conocer sus necesidades</span>
@@ -48,8 +50,8 @@
                 </span>
             </div>
         </section>
-        <section>
-            <div id="text-s4">
+        <section id="4">
+            <div id="text-s4" data-aos-delay="500" data-aos="fade">
                 <span>¿QUÉ HEMOS HECHO?</span>
                 <br>
                 <span class="text-s4-thin">
@@ -59,18 +61,18 @@
                     a <span class="text-s4-bold">posicionar la marca</span> y <span class="text-s4-bold">establecer diferencia</span> con los competidores.
                 </span>
             </div>
-            <div id="cont-btn">
-                <div class="item-btn"></div>
-                <div class="item-btn"></div>
-                <div class="item-btn"></div>
-                <div class="item-btn"></div>
-                <div class="item-btn"></div>
+            <div id="cont-btn" data-aos-delay="1000" data-aos="fade-up">
+                <div class="item-btn" data-aos-delay="1200" data-aos="fade"></div>
+                <div class="item-btn" data-aos-delay="1400" data-aos="fade"></div>
+                <div class="item-btn" data-aos-delay="1600" data-aos="fade"></div>
+                <div class="item-btn" data-aos-delay="1800" data-aos="fade"></div>
+                <div class="item-btn" data-aos-delay="2000" data-aos="fade"></div>
             </div>
         </section>
-        <section>
-            <div id="fondo-s5"></div>
-            <div id="fondo-done-s5"></div>
-            <div id="text-s5">
+        <section id="5">
+            <div id="fondo-s5" data-aos-delay="500" data-aos="fade-right"></div>
+            <div id="fondo-done-s5" data-aos-delay="2000" data-aos="fade-right"></div>
+            <div id="text-s5" data-aos-delay="1000" data-aos="fade-left">
                 <span>¿QUÉ HEMOS HECHO?</span>
                 <span class="text-s5-thin">
                     En primer lugar, todo corresponde a una <span class="text-s5-bold">idea</span>, este
@@ -84,9 +86,9 @@
                 </ul>
             </div>
         </section>
-        <section>
-            <span>¿QUÉ SERVICIOS BRINDAMOS?</span>
-            <div id="cont-text-s6">
+        <section id="6">
+            <span data-aos-delay="500" data-aos="fade-in">¿QUÉ SERVICIOS BRINDAMOS?</span>
+            <div id="cont-text-s6" data-aos-delay="800" data-aos="fade-in">
                 <span>
                     <span class="text-s6-bold">Creemos en crear;</span> lo hacemos de manera integral, producimos completamente <span class="text-s6-bold">sin subcontrataciones</span>,
                     somos una agencia donde todos los departamentos que la integran están dispuestos para el trabajo con Chedraui:
@@ -94,16 +96,16 @@
                     todas las variantes que se puedan suponer han sido resueltas por nuestro <span class="text-s6-bold">gran equipo</span>.
                 </span>
             </div>
-            <ul>
+            <ul data-aos-delay="1000" data-aos="fade-right">
                 <li>Diseño Gráfico</li>
                 <li>Producción de Audio y Video</li>
                 <li>Escritura Creativa</li>
                 <li>Social Media Management</li>
             </ul>
-            <div id="macbook-s6"></div>
+            <div id="macbook-s6" data-aos-delay="500" data-aos="fade-left"></div>
         </section>
-        <section>
-            <div id="text-s7">
+        <section id="7">
+            <div id="text-s7" data-aos-delay="1500" data-aos="fade-in">
                 <span>en facebook</span>
                 <p>
                     Tan solo en <span class="text-s7-bold">2018</span> hemos publicado <span class="text-s7-bold">más de 1000 contenidos en Facebook</span>,
@@ -128,11 +130,11 @@
                     <span class="text-s7-bold">producción igual o menor a 24 horas</span> y <span class="text-s7-bold">respuesta prácticamente inmediata</span>.
                 </p>
             </div>
-            <div id="fondo-s7"></div>
-            <div id="like-s7"></div>
+            <div id="fondo-s7" data-aos-delay="500" data-aos="fade-left"></div>
+            <div id="like-s7" data-aos-delay="3000" data-aos="zoom-in" data-aos-easing="ease-in-out-quart"></div>
         </section>
-        <section>
-            <div id="cont-items">
+        <section id="8">
+            <div id="cont-items" data-aos-delay="500" data-aos="zoom-in">
                 <div id="cont-text">
                     <span>EN RESÚMEN</span>
                     <div id="text-s8">
@@ -159,15 +161,29 @@
     </main>
     <script src="{% static 'js/jq.min.js' %}"></script>
     <script src="{% static 'js/jquery.scrollify.js' %}"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         $(function() {
+            $('.scroll-fixed').hide();
             $.scrollify({
                 section : "section",
                 scrollSpeed: 1500,
+                before:function() {
+                    if($($.scrollify.current()).attr('id') === '1' || $($.scrollify.current()).attr('id') === '8'){
+                        $('.scroll-fixed').hide();
+                    }
+                    else{
+                        $('.scroll-fixed').show();
+                    }
+                }
             });
-            $('.scroll').on('click', function(e) {
+            $('.scroll').on('click', function() {
                 $.scrollify.next();
-            })
+            });
+            $('.scroll-fixed').on('click', function() {
+                $.scrollify.next();
+            });
+            AOS.init();
         });
     </script>
 </body>
