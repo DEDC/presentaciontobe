@@ -18,8 +18,9 @@
                 <span><span class="text-s1-book">de </span> ideas,</span>
             </div>
             <div id="logo-s1"></div>
+            <a href="#2" class="scroll"></a>
         </section>
-        <section>
+        <section id="2">
             <div id="fondo-s2"></div>
             <div id="cubo-s2"></div>
             <div id="fondo-mujer-s2"></div>
@@ -135,7 +136,7 @@
                 <div id="cont-text">
                     <span>EN RESÚMEN</span>
                     <div id="text-s8">
-                        <p class="text-s8-bold">En TOBE creamos gráficas publicitarias, adaptaciones y
+                        <p>En TOBE creamos gráficas publicitarias, adaptaciones y
                             artes finales, produciendo spots y video, fotografías, luciones, audios de perifoneo, señalética para tiendas,
                             trabajando desde los escaparates y la forma de comunicarlos, mediante copys creativos, storytelling,
                             redacción para publicidad y argumentos comerciales.
@@ -162,7 +163,11 @@
         $(function() {
             $.scrollify({
                 section : "section",
+                scrollSpeed: 1500,
             });
+            $('.scroll').on('click', function(e) {
+                $.scrollify.next();
+            })
         });
     </script>
 </body>
