@@ -526,6 +526,7 @@ section:nth-child(8) > #cont-items{
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    padding: 0 2% 0 2%;
 }
 
 section:nth-child(8) > #cont-items > #cont-text{
