@@ -67,6 +67,11 @@ section:nth-child(7){
 section:nth-child(8){
     width: 100vw;
     height: 100vh;
+}
+
+section:nth-child(9){
+    width: 100vw;
+    height: 100vh;
     background: url(../d8_fondo.png) no-repeat center center;
     background-size: cover;
     display: -webkit-box;
@@ -78,11 +83,6 @@ section:nth-child(8){
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-}
-
-section:nth-child(9){
-    width: 100vw;
-    height: 100vh;
 }
 
 /* section 1 */
@@ -480,6 +480,49 @@ section:nth-child(6) > #macbook-s6{
 /* section 7 */
 section:nth-child(7) > #fondo-s7{
     position: absolute;
+    background: url(../d9_fondo.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin-left: 56%;
+}
+
+section:nth-child(7) > #reacciones-s7{
+    position: absolute;
+    background: url(../d9_pc_reacc.png) no-repeat center center;
+    background-size: contain;
+    width: 38%;
+    height: 76%;
+    margin-top: 6%;
+    margin-left: 52%;
+    z-index: 2;
+}
+
+section:nth-child(7) > #estadisticas-s7{
+    position: absolute;
+    background: url(../d9_estadisticas.png) no-repeat center center;
+    background-size: contain;
+    width: 80%;
+    height: 75%;
+    z-index: -1;
+    margin-left: -16%;
+    margin-top: 10%;
+}
+
+section:nth-child(7) > span{
+    position: absolute;
+    font-family: 'GothamBlack';
+    font-size: 3vmax;
+    margin-top: 6%;
+    color: #037bb1;
+    margin-left: 10%;
+}
+/* end section 7 */
+
+/* section 8 */
+section:nth-child(8) > #fondo-s8{
+    position: absolute;
     background: url(../d7_der.png) no-repeat center center;
     background-size: cover;
     width: 89%;
@@ -488,7 +531,7 @@ section:nth-child(7) > #fondo-s7{
     margin-left: 45%;
 }
 
-section:nth-child(7) > #like-s7{
+section:nth-child(8) > #like-s8{
     position: absolute;
     background: url(../d7_like.png) no-repeat center center;
     background-size: contain;
@@ -499,7 +542,7 @@ section:nth-child(7) > #like-s7{
     z-index: 2;
 }
 
-section:nth-child(7) > #text-s7{
+section:nth-child(8) > #text-s8{
     width: 50%;
     position: absolute;
     display: grid;
@@ -509,20 +552,20 @@ section:nth-child(7) > #text-s7{
     margin-left: 10%;
 }
 
-section:nth-child(7) > #text-s7 > span{
+section:nth-child(8) > #text-s8 > span{
     font-family: 'GothamBlack';
     font-size: 3vmax;
     color: #095991;
 }
 
-section:nth-child(7) > #text-s7  .text-s7-bold{
+section:nth-child(8) > #text-s8  .text-s8-bold{
     font-family: 'GothamBold';
 }
 
-/* end section 7 */
+/* end section 8 */
 
-/* section 8 */
-section:nth-child(8) > #cont-items{
+/* section 9 */
+section:nth-child(9) > #cont-items{
      width: 80%;
     height: 50%;
     border: 2px solid #05aee2;
@@ -535,7 +578,7 @@ section:nth-child(8) > #cont-items{
     padding: 0 2% 0 2%;
 }
 
-section:nth-child(8) > #cont-items > #cont-text{
+section:nth-child(9) > #cont-items > #cont-text{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -548,7 +591,7 @@ section:nth-child(8) > #cont-items > #cont-text{
     flex-direction: row;
 }
 
-section:nth-child(8) > #cont-items > #cont-text > span:nth-child(1){
+section:nth-child(9) > #cont-items > #cont-text > span:nth-child(1){
     position: absolute;
     font-family: 'GothamBlack';
     font-size: 3vmax;
@@ -556,7 +599,7 @@ section:nth-child(8) > #cont-items > #cont-text > span:nth-child(1){
     margin-top: -5%;
 }
 
-section:nth-child(8) > #cont-items > #cont-text > #lapiz-s8{
+section:nth-child(9) > #cont-items > #cont-text > #lapiz-s9{
     position: absolute;
     background: url(../d8_lapiz.png) no-repeat center center;
     background-size: contain;
@@ -566,7 +609,7 @@ section:nth-child(8) > #cont-items > #cont-text > #lapiz-s8{
     margin-top: 3%;
 }
 
-section:nth-child(8) > #cont-items > #cont-text  #text-s8{
+section:nth-child(9) > #cont-items > #cont-text  #text-s9{
     position: absolute;
     font-family: 'GothamThin';
     font-size: 1.3vmax;
@@ -576,51 +619,8 @@ section:nth-child(8) > #cont-items > #cont-text  #text-s8{
     margin-top: 1%;
 }
 
-section:nth-child(8) > #cont-items > #cont-text  .text-s8-bold{
+section:nth-child(9) > #cont-items > #cont-text  .text-s9-bold{
     font-family: 'GothamBold';
-}
-/* end section 8 */
-
-/* section 9 */
-section:nth-child(9) > #fondo-s9{
-    position: absolute;
-    background: url(../d9_fondo.png) no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    margin-left: 56%;
-}
-
-section:nth-child(9) > #reacciones-s9{
-    position: absolute;
-    background: url(../d9_pc_reacc.png) no-repeat center center;
-    background-size: contain;
-    width: 38%;
-    height: 76%;
-    margin-top: 6%;
-    margin-left: 52%;
-    z-index: 2;
-}
-
-section:nth-child(9) > #estadisticas-s9{
-    position: absolute;
-    background: url(../d9_estadisticas.png) no-repeat center center;
-    background-size: contain;
-    width: 80%;
-    height: 75%;
-    z-index: -1;
-    margin-left: -16%;
-    margin-top: 10%;
-}
-
-section:nth-child(9) > span{
-    position: absolute;
-    font-family: 'GothamBlack';
-    font-size: 3vmax;
-    margin-top: 6%;
-    color: #037bb1;
-    margin-left: 10%;
 }
 /* end section 9 */
 
