@@ -158,6 +158,12 @@
                 </div>
             </div>
         </section>
+        <section>
+            <span data-aos-delay="600" data-aos="fade-in">PUBLICACIONES REALIZADAS</span>
+            <div id="fondo-s9" data-aos-delay="500" data-aos="fade-left"></div>
+            <div id="reacciones-s9" data-aos-delay="800" data-aos="fade-left"></div>
+            <div id="estadisticas-s9" data-aos-delay="1000" data-aos="fade-right"></div>
+        </section>
     </main>
     <script src="{% static 'js/jq.min.js' %}"></script>
     <script src="{% static 'js/jquery.scrollify.js' %}"></script>
@@ -169,7 +175,7 @@
                 section : "section",
                 scrollSpeed: 1500,
                 before:function() {
-                    if($($.scrollify.current()).attr('id') === '1' || $($.scrollify.current()).attr('id') === '8'){
+                    if($($.scrollify.current()).attr('id') === '1' || $($.scrollify.current()).attr('id') === '9'){
                         $('.scroll-fixed').hide();
                     }
                     else{
