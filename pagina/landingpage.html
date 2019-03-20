@@ -21,6 +21,7 @@
             <div id="logo-s1"></div>
             <a href="#2" class="scroll"></a>
             <a href="#" class="scroll-fixed"></a>
+            <a href="#" class="scroll-fixed-up"></a>
         </section>
         <section id="2">
             <div id="fondo-s2" data-aos-delay="500" data-aos="fade-left"></div>
@@ -170,16 +171,24 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         $(function() {
+            AOS.init();
             $('.scroll-fixed').hide();
+            $('.scroll-fixed-up').hide();
             $.scrollify({
                 section : "section",
                 scrollSpeed: 1500,
                 before:function() {
-                    if($($.scrollify.current()).attr('id') === '1' || $($.scrollify.current()).attr('id') === '9'){
+                    if($($.scrollify.current()).attr('id') === '1'){
+                        $('.scroll-fixed').hide();
+                        $('.scroll-fixed-up').hide();
+                    }
+                    else if($($.scrollify.current()).attr('id') === '9'){
+                        $('.scroll-fixed-up').show();
                         $('.scroll-fixed').hide();
                     }
                     else{
                         $('.scroll-fixed').show();
+                        $('.scroll-fixed-up').show();
                     }
                 }
             });
@@ -189,7 +198,9 @@
             $('.scroll-fixed').on('click', function() {
                 $.scrollify.next();
             });
-            AOS.init();
+            $('.scroll-fixed-up').on('click', function() {
+                $.scrollify.previous();
+            });
         });
     </script>
 </body>

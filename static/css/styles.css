@@ -158,7 +158,6 @@ section:nth-child(1) > #logo-s1{
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 40px;
     margin: auto;
     top: 50px;
     right: 0;
@@ -178,13 +177,36 @@ section:nth-child(1) > #logo-s1{
 }
 
 .scroll-fixed:after{
-    border-right: 2px solid rgba(0, 0, 0, .4);
-    border-bottom: 2px solid rgba(0, 0, 0, .4);
+    border-right: 2px solid rgba(0, 0, 0, .2);
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .scroll-fixed:after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+
+.scroll-fixed-up{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: -9px;
+    right: 110px;
+    z-index: 9999;
+}
+
+.scroll-fixed-up:after{
+    border-right: 2px solid rgba(0, 0, 0, .2);
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.scroll-fixed-up:after {
     content: '';
     width: 40px;
     height: 40px;
@@ -467,13 +489,14 @@ section:nth-child(6) > ul{
 }
 section:nth-child(6) > #macbook-s6{
     position: absolute;
-    background: url(../d6_macbook.png) no-repeat center center;
+    background: url(../d6_macbook_play.png) no-repeat center center;
     background-size: contain;
     width: 55%;
     height: 94%;
     z-index: 1;
     margin-left: 50%;
     margin-top: 6%;
+    cursor: pointer;
 }
 /* end section 6 */
 
