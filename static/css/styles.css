@@ -9,7 +9,7 @@
 
 @font-face{
     font-family: 'GothamThin';
-    src: url('fonts/gotham/Gotham-Thin.otf');
+    src: url('fonts/gotham/Gotham-Light.otf');
 }
 
 @font-face{
@@ -185,7 +185,7 @@ section:nth-child(1) > #logo-s1{
     height: 40px;
     position: absolute;
 }
-
+/* ################################################################## */
 section:nth-child(2) > #fondo-s2{
     position: absolute;
     background: url(../d2_der.png) no-repeat center center;
@@ -574,3 +574,20 @@ section:nth-child(8) > #cont-items > #cont-text  .text-s8-bold{
     font-family: 'GothamBold';
 }
 /* end section 8 */
+
+/* mediaquerys */
+
+/* mac */
+@media only screen and (max-width: 1280px) {
+    section:nth-child(2) > #fondo-s2{
+        width: 100%;
+    }
+    section:nth-child(3) > #fondo-s3{
+        width: 100%;
+        margin-left: -53%;
+    }
+    section:nth-child(5) > #fondo-s5{
+        width: 100%;
+        margin-left: -66%;
+    }
+}
