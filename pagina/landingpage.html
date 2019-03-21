@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="{% static 'css/tingle.css' %}">
     <title>Presentación TOBE</title>
 </head>
 <body>
@@ -168,6 +169,7 @@
     </main>
     <script src="{% static 'js/jq.min.js' %}"></script>
     <script src="{% static 'js/jquery.scrollify.js' %}"></script>
+    <script src="{% static 'js/tingle.js' %}"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         $(function() {
@@ -200,6 +202,23 @@
             });
             $('.scroll-fixed-up').on('click', function() {
                 $.scrollify.previous();
+            });
+            var modal = new tingle.modal({
+                footer: false,
+                stickyFooter: false,
+                closeMethods: ['overlay', 'button', 'escape'],
+                closeLabel: "Close",
+                cssClass: ['custom-class-1', 'custom-class-2'],
+                onOpen: function() {
+                    $('video').get(0).play();
+                },
+                onClose: function() {
+                    $('video').get(0).pause();
+                }
+            });
+            modal.setContent("<video src='{% static 'tobe.mp4' %}' width='100%' height='100%' controls></video>");
+            $('#macbook-s6').on('click', function(){
+                modal.open();
             });
         });
     </script>
