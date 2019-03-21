@@ -192,10 +192,10 @@ section:nth-child(2) > #fondo-s2{
     position: absolute;
     background: url(../d2_der.png) no-repeat center center;
     background-size: cover;
-    width: 89%;
+    width: 105%;
     height: 100%;
     z-index: 1;
-    margin-left: 55%;
+    margin-left: 57%;
 }
 
 section:nth-child(2) > #fondo-mujer-s2{
@@ -226,7 +226,7 @@ section:nth-child(2) > #text-s2{
     font-family: 'GothamBlack';
     font-size: 3vmax;
     z-index: 2;
-    margin-top: 12%;
+    margin-top: 17%;
     margin-left: 6%;
     color: #0465a8;
 }
@@ -247,10 +247,10 @@ section:nth-child(3) > #fondo-s3{
     position: absolute;
     background: url(../d3_izq.png) no-repeat center center;
     background-size: cover;
-    width: 90%;
+    width: 102%;
     height: 100%;
     z-index: 1;
-    margin-left: -45%;
+    margin-left: -55%;
 }
 
 section:nth-child(3) > #fondo-grafico-s3{
@@ -270,8 +270,8 @@ section:nth-child(3) > #text-s3{
     font-family: 'GothamBlack';
     font-size: 3vmax;
     z-index: 2;
-    margin-top: 9%;
-    margin-left: 44%;
+    margin-top: 16%;
+    margin-left: 50%;
     color: #0465a8;
 }
 
@@ -295,7 +295,7 @@ section:nth-child(4) > #text-s4{
     font-family: 'GothamBlack';
     font-size: 3vmax;
     z-index: 2;
-    margin-top: 5%;
+    margin-top: 7%;
     color: #0465a8;
     text-align: center;
 }
@@ -328,7 +328,7 @@ section:nth-child(4) > #cont-btn .item-btn{
     width: 100px;
     height: 100px;
     background-color: red;
-    margin-top: -7%;
+    margin-top: -9%;
 }
 
 section:nth-child(4) > #cont-btn .item-btn:nth-child(1){
@@ -373,10 +373,10 @@ section:nth-child(5) > #fondo-s5{
     position: absolute;
     background: url(../d5_izq.png) no-repeat center center;
     background-size: cover;
-    width: 80%;
+    width: 100%;
     height: 100%;
     z-index: -1;
-    margin-left: -49%;
+    margin-left: -65%;
 }
 
 section:nth-child(5) > #fondo-done-s5{
@@ -398,8 +398,8 @@ section:nth-child(5) > #text-s5{
     z-index: 2;
     color: #0465a8;
     text-align: right;
-    margin-top: 8%;
-    margin-left: 40%;
+    margin-top: 15%;
+    margin-left: 43%;
 }
 
 section:nth-child(5) > #text-s5 > .text-s5-thin{
@@ -426,7 +426,7 @@ section:nth-child(6) > span{
     position: absolute;
     font-family: 'GothamBlack';
     font-size: 3vmax;
-    margin-top: 1%;
+    margin-top: 5%;
     color: #0465a8;
     margin-left: 10%;
 }
@@ -468,15 +468,15 @@ section:nth-child(6) > #cont-cat{
     flex-wrap: wrap;
     width: 56%;
     height: 64%;
-    margin-top: 6%;
+    margin-top: 10%;
     margin-left: 8%;
 }
 
 section:nth-child(6) > #cont-cat .cat{
     height: 35%;
     width: 21%;
-    margin-bottom: 1%;
-    margin-left: 1%;
+    /* margin-bottom: 1%; */
+    margin-left: 3%;
     cursor: pointer;
 }
 
@@ -589,10 +589,10 @@ section:nth-child(8) > #fondo-s8{
     position: absolute;
     background: url(../d9_fondo.png) no-repeat center center;
     background-size: cover;
-    width: 100%;
+    width: 102%;
     height: 100%;
     z-index: 1;
-    margin-left: 62%;
+    margin-left: 64%;
 }
 
 section:nth-child(8) > #reacciones-s8{
@@ -632,10 +632,10 @@ section:nth-child(9) > #fondo-s9{
     position: absolute;
     background: url(../d10_izq.png) no-repeat center center;
     background-size: cover;
-    width: 100%;
+    width: 103%;
     height: 100%;
     z-index: 1;
-    margin-left: -66%;
+    margin-left: -69%;
 }
 
 section:nth-child(9) > #estadisticas-s9{
