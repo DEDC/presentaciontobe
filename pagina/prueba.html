@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/viewScroller.min.css' %}">
+    <style>
+    </style>
+</head>
+<body>
+        <div class="mainbag">
+                <div vs-anchor="firstview" class="mainview">View 1</div>
+                <div vs-anchor="secondview" class="mainview">
+                    <div class="subbag">
+                        <div vs-anchor="firstsubview" class="subview">Subview A</div>
+                        <div vs-anchor="secondsubview" class="subview">Subview B</div>
+                        <div vs-anchor="thirdsubview" class="subview">Subview C</div>
+                    </div>
+                </div>
+                <div vs-anchor="thirdview" class="mainview">View 3</div>
+            </div>
+</body>
+    <script src="{% static 'js/jquery-3.1.0.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'js/jquery.mousewheel.min.js' %}"></script>
+    <script src="{% static 'js/viewScroller.js' %}"></script>
+    <script>
+        
+        $(document).ready(function () {
+
+// Sets viewScroller with sample events
+$('.mainbag').viewScroller({
+    useScrollbar: false,
+    beforeChange: function () {
+        console.log('beforeChange fired!');
+        return false; // It means that views change will be terminated
+    },
+    afterChange: function () {
+        console.log('afterChange fired!');
+    },
+    beforeResize: function () {
+        console.log('beforeResize fired!');
+    },
+    afterResize: function () {
+        console.log('afterResize fired!');
+    }
+});
+
+// Sets start params for MENU
+$('.mainbag').css({
+    'left': '140px'
+});
+$.fn.viewScroller.setSpaceMainBag(140); // Sets 140px space for MENU
+
+// Show / hide menu panel
+$('#hidePanel').on('click', function () {
+    if ($('.panel').css('display') !== 'none') {
+        $('#hidePanel').text('>>');
+        $('.panel').hide();
+        $('.mainbag').css({
+            'left': '0px'
+        });
+        $.fn.viewScroller.setSpaceMainBag(0); // sets mainbag's width when panel is closed
+    } else {
+        $('#hidePanel').text('<<');
+        $('.panel').show();
+        $('.mainbag').css({
+            'left': '140px'
+        });
+        $.fn.viewScroller.setSpaceMainBag(140); // sets mainbag's width when panel is open
+    }
+});
+
+//Show / hide examples panel
+$('.examples').hide();
+$('.examples-show').click(function () {
+    $('.examples').toggle();
+});
+
+// Turnon / turnoff the scroll views when they are animate
+$('#scroll').on('click', function () {
+    if ($('#scroll').prop("checked")) {
+        $.fn.viewScroller.setChangeWhenAnim(true);
+    } else {
+        $.fn.viewScroller.setChangeWhenAnim(false);
+    }
+});
+
+});
+
+    </script>
+</html>

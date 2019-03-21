@@ -27,17 +27,7 @@ html, body{
     padding: 0 !important;
 }
 
-section:nth-child(1){
-    width: 100vw;
-    height: 100vh;
-}
-
-section:nth-child(2){
-    width: 100vw;
-    height: 100vh;
-}
-
-section:nth-child(3){
+section:nth-child(1), section:nth-child(2), section:nth-child(3), section:nth-child(5), section:nth-child(6), section:nth-child(7), section:nth-child(8), section:nth-child(9), section:nth-child(10), section:nth-child(11){
     width: 100vw;
     height: 100vh;
 }
@@ -53,32 +43,7 @@ section:nth-child(4){
     justify-content: center;
 }
 
-section:nth-child(5){
-    width: 100vw;
-    height: 100vh;
-}
-
-section:nth-child(6){
-    width: 100vw;
-    height: 100vh;
-}
-
-section:nth-child(7){
-    width: 100vw;
-    height: 100vh;
-}
-
-section:nth-child(8){
-    width: 100vw;
-    height: 100vh;
-}
-
-section:nth-child(9){
-    width: 100vw;
-    height: 100vh;
-}
-
-section:nth-child(10){
+section:nth-child(12){
     width: 100vw;
     height: 100vh;
     background: url(../d8_fondo.png) no-repeat center center;
@@ -461,12 +426,122 @@ section:nth-child(6) > span{
     position: absolute;
     font-family: 'GothamBlack';
     font-size: 3vmax;
+    margin-top: 1%;
+    color: #0465a8;
+    margin-left: 10%;
+}
+
+section:nth-child(6) > #fondo-sombra-s6{
+    position: absolute;
+    background: url(../d11_fondo_sombra.png) no-repeat center center;
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
+    margin-left: -20%
+}
+
+section:nth-child(6) > #fondo-s6{
+    position: absolute;
+    background: url(../d11_fondo_der.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin-left: 52%;
+}
+
+section:nth-child(6) > #mano-s6{
+    position: absolute;
+    background: url(../d11_mano.png) no-repeat center center;
+    background-size: contain;
+    width: 38%;
+    height: 87%;
+    margin-top: 6%;
+    margin-left: 61%;
+    z-index: 2;
+}
+
+section:nth-child(6) > #cont-cat{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 56%;
+    height: 64%;
+    margin-top: 6%;
+    margin-left: 8%;
+}
+
+section:nth-child(6) > #cont-cat .cat{
+    height: 35%;
+    width: 21%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+section:nth-child(6) > #cont-cat > #cat-1{
+    background: url(../d11_cat_1.png) no-repeat center center;
+    background-size: contain;
+}
+
+section:nth-child(6) > #cont-cat > #cat-2{
+    background: url(../d11_cat_2.png) no-repeat center center;
+    background-size: contain;
+}
+
+section:nth-child(6) > #cont-cat > #cat-3{
+    background: url(../d11_cat_3.png) no-repeat center center;
+    background-size: contain;
+}
+
+section:nth-child(6) > #cont-cat > #cat-4{
+    background: url(../d11_cat_4.png) no-repeat center center;
+    background-size: contain;
+}
+
+section:nth-child(6) > #cont-cat > #cat-5{
+    background: url(../d11_cat_5.png) no-repeat center center;
+    background-size: contain;
+}
+
+section:nth-child(6) > #cont-cat > #cat-6{
+    background: url(../d11_cat_6.png) no-repeat center center;
+    background-size: contain;
+}
+
+section:nth-child(6) > #cont-cat > #cat-7{
+    background: url(../d11_cat_7.png) no-repeat center center;
+    background-size: contain;
+}
+
+section:nth-child(6) > #cont-cat > #cat-8{
+    background: url(../d11_cat_8.png) no-repeat center center;
+    background-size: contain;
+}
+
+section:nth-child(6) > #cont-cat > #cat-9{
+    background: url(../d11_cat_9.png) no-repeat center center;
+    background-size: contain;
+}
+
+section:nth-child(6) > #cont-cat > #cat-10{
+    background: url(../d11_cat_10.png) no-repeat center center;
+    background-size: contain;
+}
+/* end section 6 */
+
+/* section 7 */
+section:nth-child(7) > span{
+    position: absolute;
+    font-family: 'GothamBlack';
+    font-size: 3vmax;
     margin-top: 6%;
     color: #0465a8;
     margin-left: 10%;
 }
 
-section:nth-child(6) > #cont-text-s6{
+section:nth-child(7) > #cont-text-s7{
     position: absolute;
     width: 100%;
     height: auto;
@@ -478,17 +553,17 @@ section:nth-child(6) > #cont-text-s6{
     color: white;
 }
 
-section:nth-child(6) > #cont-text-s6  .text-s6-bold{
+section:nth-child(7) > #cont-text-s7  .text-s7-bold{
     font-family: 'GothamBold';
 }
 
-section:nth-child(6) > #cont-text-s6 > span{
+section:nth-child(7) > #cont-text-s7 > span{
     width: 40%;
     display: block;
     margin-left: 10%;
 }
 
-section:nth-child(6) > ul{
+section:nth-child(7) > ul{
     position: absolute;
     margin-left: 9%;
     margin-top: 35%;
@@ -496,7 +571,7 @@ section:nth-child(6) > ul{
     font-family: 'GothamBlack';
     color: #036ca5;
 }
-section:nth-child(6) > #macbook-s6{
+section:nth-child(7) > #macbook-s7{
     position: absolute;
     background: url(../d6_macbook_play.png) no-repeat center center;
     background-size: contain;
@@ -507,10 +582,10 @@ section:nth-child(6) > #macbook-s6{
     margin-top: 6%;
     cursor: pointer;
 }
-/* end section 6 */
+/* end section 7 */
 
-/* section 7 */
-section:nth-child(7) > #fondo-s7{
+/* section 8 */
+section:nth-child(8) > #fondo-s8{
     position: absolute;
     background: url(../d9_fondo.png) no-repeat center center;
     background-size: cover;
@@ -520,7 +595,7 @@ section:nth-child(7) > #fondo-s7{
     margin-left: 62%;
 }
 
-section:nth-child(7) > #reacciones-s7{
+section:nth-child(8) > #reacciones-s8{
     position: absolute;
     background: url(../d9_pc_reacc.png) no-repeat center center;
     background-size: contain;
@@ -531,7 +606,7 @@ section:nth-child(7) > #reacciones-s7{
     z-index: 2;
 }
 
-section:nth-child(7) > #estadisticas-s7{
+section:nth-child(8) > #estadisticas-s8{
     position: absolute;
     background: url(../d9_estadisticas.png) no-repeat center center;
     background-size: contain;
@@ -542,7 +617,7 @@ section:nth-child(7) > #estadisticas-s7{
     margin-top: 10%;
 }
 
-section:nth-child(7) > span{
+section:nth-child(8) > span{
     position: absolute;
     font-family: 'GothamBlack';
     font-size: 3vmax;
@@ -550,10 +625,10 @@ section:nth-child(7) > span{
     color: #037bb1;
     margin-left: 10%;
 }
-/* end section 7 */
+/* end section 8 */
 
-/* section 8 */
-section:nth-child(8) > #fondo-s8{
+/* section 9 */
+section:nth-child(9) > #fondo-s9{
     position: absolute;
     background: url(../d10_izq.png) no-repeat center center;
     background-size: cover;
@@ -563,7 +638,7 @@ section:nth-child(8) > #fondo-s8{
     margin-left: -66%;
 }
 
-section:nth-child(8) > #estadisticas-s8{
+section:nth-child(9) > #estadisticas-s9{
     position: absolute;
     background: url(../d10_estadisticas.png) no-repeat center center;
     background-size: contain;
@@ -574,7 +649,7 @@ section:nth-child(8) > #estadisticas-s8{
     margin-top: 7%
 }
 
-section:nth-child(8) > #celular-s8{
+section:nth-child(9) > #celular-s9{
     position: absolute;
     background: url(../d10_celular.png) no-repeat center center;
     background-size: contain;
@@ -584,10 +659,61 @@ section:nth-child(8) > #celular-s8{
     margin-left: -1%;
     z-index: 2;
 }
-/* end section 8 */
+/* end section 9 */
 
-/* section 9 */
-section:nth-child(9) > #fondo-s9{
+/* section 10 */
+section:nth-child(10) > #fondo-s10{
+    position: absolute;
+    background: url(../d11_fondo_der.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin-left: 60%;
+}
+
+section:nth-child(10) > #cont-enlaces{
+    position: absolute;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 6%;
+    /* background-color: red; */
+}
+
+section:nth-child(10) > #cont-enlaces .enlace{
+    height: 35%;
+    width: 21%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+section:nth-child(10) > #cont-enlaces > #enlace1 {
+    background: url(../d12_enlace_1.png) no-repeat center center;
+    background-size: contain;
+}
+section:nth-child(10) > #cont-enlaces > #enlace2 {
+    background: url(../d12_enlace_2.png) no-repeat center center;
+    background-size: contain;
+}
+section:nth-child(10) > #cont-enlaces > #enlace3 {
+    background: url(../d12_enlace_3.png) no-repeat center center;
+    background-size: contain;
+}
+section:nth-child(10) > #cont-enlaces > #enlace4 {
+    background: url(../d12_enlace_1.png) no-repeat center center;
+    background-size: contain;
+}
+section:nth-child(10) > #cont-enlaces > #enlace5 {
+    background: url(../d12_enlace_2.png) no-repeat center center;
+    background-size: contain;
+}
+/* end section 10 */
+
+/* section 11 */
+section:nth-child(11) > #fondo-s11{
     position: absolute;
     background: url(../d7_der.png) no-repeat center center;
     background-size: cover;
@@ -597,7 +723,7 @@ section:nth-child(9) > #fondo-s9{
     margin-left: 45%;
 }
 
-section:nth-child(9) > #like-s9{
+section:nth-child(11) > #like-s11{
     position: absolute;
     background: url(../d7_like.png) no-repeat center center;
     background-size: contain;
@@ -608,7 +734,7 @@ section:nth-child(9) > #like-s9{
     z-index: 2;
 }
 
-section:nth-child(9) > #text-s9{
+section:nth-child(11) > #text-s11{
     width: 50%;
     position: absolute;
     display: grid;
@@ -618,20 +744,20 @@ section:nth-child(9) > #text-s9{
     margin-left: 10%;
 }
 
-section:nth-child(9) > #text-s9 > span{
+section:nth-child(11) > #text-s11 > span{
     font-family: 'GothamBlack';
     font-size: 3vmax;
     color: #095991;
 }
 
-section:nth-child(9) > #text-s9  .text-s9-bold{
+section:nth-child(11) > #text-s11  .text-s11-bold{
     font-family: 'GothamBold';
 }
 
-/* end section 9 */
+/* end section 11 */
 
-/* section 10 */
-section:nth-child(10) > #cont-items{
+/* section 12 */
+section:nth-child(12) > #cont-items{
      width: 80%;
     height: 50%;
     border: 2px solid #05aee2;
@@ -644,7 +770,7 @@ section:nth-child(10) > #cont-items{
     padding: 0 2% 0 2%;
 }
 
-section:nth-child(10) > #cont-items > #cont-text{
+section:nth-child(12) > #cont-items > #cont-text{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -657,7 +783,7 @@ section:nth-child(10) > #cont-items > #cont-text{
     flex-direction: row;
 }
 
-section:nth-child(10) > #cont-items > #cont-text > span:nth-child(1){
+section:nth-child(12) > #cont-items > #cont-text > span:nth-child(1){
     position: absolute;
     font-family: 'GothamBlack';
     font-size: 3vmax;
@@ -665,7 +791,7 @@ section:nth-child(10) > #cont-items > #cont-text > span:nth-child(1){
     margin-top: -5%;
 }
 
-section:nth-child(10) > #cont-items > #cont-text > #lapiz-s10{
+section:nth-child(12) > #cont-items > #cont-text > #lapiz-s12{
     position: absolute;
     background: url(../d8_lapiz.png) no-repeat center center;
     background-size: contain;
@@ -675,7 +801,7 @@ section:nth-child(10) > #cont-items > #cont-text > #lapiz-s10{
     margin-top: 3%;
 }
 
-section:nth-child(10) > #cont-items > #cont-text  #text-s10{
+section:nth-child(12) > #cont-items > #cont-text  #text-s12{
     position: absolute;
     font-family: 'GothamThin';
     font-size: 1.3vmax;
@@ -685,10 +811,10 @@ section:nth-child(10) > #cont-items > #cont-text  #text-s10{
     margin-top: 1%;
 }
 
-section:nth-child(10) > #cont-items > #cont-text  .text-s10-bold{
+section:nth-child(12) > #cont-items > #cont-text  .text-s12-bold{
     font-family: 'GothamBold';
 }
-/* end section 10 */
+/* end section 12 */
 
 /* mediaquerys */
 
