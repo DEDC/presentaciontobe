@@ -7,12 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="{% static 'css/tingle.css' %}">
-    <link rel="stylesheet" href="{% static 'css/lightgallery.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tingle.css' %}">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <title>Presentación TOBE</title>
+    <style>
+        .modal{
+            z-index : 9999 !important;
+        }
+        .blocker{
+            z-index: 9999 !important;
+        }
+    </style>
 </head>
 <body>
-    <main>
+    <main>      
         <section id="1">
             <div id="fondo-s1"></div>
             <div id="text-s1">
@@ -90,22 +98,76 @@
             </div>
         </section>
         <section id="6">
+            <a href="#cat1" rel="modal:open" style="display:none"></a>
+            <a href="#cat2" rel="modal:open" style="display:none"></a>
+            <a href="#cat3" rel="modal:open" style="display:none"></a>
+            <a href="#cat4" rel="modal:open" style="display:none"></a>
+            <a href="#cat5" rel="modal:open" style="display:none"></a>
+            <a href="#cat6" rel="modal:open" style="display:none"></a>
+            <div id="cat1" class="modal">
+                <p>Almacenes</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+            <div id="cat2" class="modal">
+                <p>Carnes, aves y pescados</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+            <div id="cat3" class="modal">
+                <p>Thanks for clicking. That felt good.</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+            <div id="cat4" class="modal">
+                <p>Thanks for clicking. That felt good.</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+            <div id="cat5" class="modal">
+                <p>Thanks for clicking. That felt good.</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+            <div id="cat6" class="modal">
+                <p>Thanks for clicking. That felt good.</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+            <div id="cat7" class="modal">
+                <p>Thanks for clicking. That felt good.</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+            <div id="cat8" class="modal">
+                <p>Thanks for clicking. That felt good.</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+            <div id="cat9" class="modal">
+                <p>Thanks for clicking. That felt good.</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+            <div id="cat10" class="modal">
+                <p>Thanks for clicking. That felt good.</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+            <div id="cat11" class="modal">
+                <p>Thanks for clicking. That felt good.</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+            <div id="cat12" class="modal">
+                <p>Thanks for clicking. That felt good.</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
             <span>CATEGORÍAS</span>
             <div id="fondo-sombra-s6" data-aos-delay="500" data-aos="fade-right"></div>
             <div id="fondo-s6" data-aos-delay="500" data-aos="fade-left"></div>
             <div id="cont-cat" data-aos-delay="1500" data-aos="zoom-in">
-                <div id="cat-1" class="cat"></div>
-                <div id="cat-2" class="cat"></div>
-                <div id="cat-3" class="cat"></div>
-                <div id="cat-4" class="cat"></div>
-                <div id="cat-5" class="cat"></div>
-                <div id="cat-6" class="cat"></div>
-                <div id="cat-7" class="cat"></div>
-                <div id="cat-8" class="cat"></div>
-                <div id="cat-9" class="cat"></div>
-                <div id="cat-10" class="cat"></div>
-                <div id="cat-11" class="cat"></div>
-                <div id="cat-12" class="cat"></div>
+                <div id="cat-1" class="cat" data-a="cat1"></div>
+                <div id="cat-2" class="cat" data-a="cat2"></div>
+                <div id="cat-3" class="cat" data-a="cat3"></div>
+                <div id="cat-4" class="cat" data-a="cat4"></div>
+                <div id="cat-5" class="cat" data-a="cat5"></div>
+                <div id="cat-6" class="cat" data-a="cat6"></div>
+                <div id="cat-7" class="cat" data-a="cat7"></div>
+                <div id="cat-8" class="cat" data-a="cat8"></div>
+                <div id="cat-9" class="cat" data-a="cat9"></div>
+                <div id="cat-10" class="cat" data-a="cat10"></div>
+                <div id="cat-11" class="cat" data-a="cat11"></div>
+                <div id="cat-12" class="cat" data-a="cat12"></div>
             </div>
             <div id="mano-s6" data-aos-delay="1000" data-aos="fade-up"></div>
         </section>
@@ -145,29 +207,29 @@
             <div id="cont-enlaces">
                 <div id="videos">
                     <div id="icon-video"></div>
-                    <a href="">dfsdf</a>
-                    <a href="">sdfsdf</a>
-                    <a href="">sdfsdf</a>
-                    <a href="">dsfsdf</a>
-                    <a href="">dfsdf</a>
-                    <a href="">sdfsdf</a>
-                    <a href="">dfdsf</a>
-                    <a href="">sdfdsf</a>
-                    <a href="">sdfsdf</a>
-                    <a href="">sdfds</a>
+                    <a target="__blank" href="https://business.facebook.com/ChedrauiTabasco/videos/242567029679978/?__xts__%5B0%5D=68.ARAdEmWmkPxy1BUoZREf4wsftMBYQG6GjcFS_412xFAlkN2Ydj_YRueLjJQSm1RLxgVJWcpHW5qSnOE2WNztpjT5morcxY7iEE56TBfs1Gxjp1T_FnqNInKULTyTorouS-YcCZzqxbgmi5awmLANRpV5XYflnrKUvRLyzWDvMfDNYVrrLQ9cNdby1cZpVZ9eLw26d2I0YjWe5-tRXH_9MslYfb8jwdzupBxFv58uB6A0swB92PqhlBsMGRow5ZAacLi_MHzoBedw2tTSwDImTSHv-npU2wsWW44NyAa4w69LY584MARGRIgUn7USh3zYHpVP0bo5MzNIBTuVZL8ucSjUEUyQk0FE2r0f8w&__tn__=-R">Panadería</a>
+                    <a target="__blank" href="https://business.facebook.com/ChedrauiTabasco/videos/2556377557920761/?__xts__%5B0%5D=68.ARBnHclIbmK07t0K9lCXUYaSjiHoj03Y0-viWpMSB3USKlIagLtxl1TXxaDODXxoM684avyoHVOi0T-LCXCfiRC7wnRqo9bOTjDWuyAeYQNLE4apuVszgfY_nAKAIebrKldsy1Shya6Urk4KuBHJrUSDOns6LNdG3Y2FjM71ha0xkfLCCjQXr2XX22NLMq-UYGCvHl7ZV9HshJSzVnYYljgXEl2MppV7IqpGB4zobcDHG1ae6oVdOBp4oUP21BsQPHHQBqJMUpP2TV7EKgwczDZq243j0sMODx4qewkpLxYnkI8XzP2K6qSvY9KtSy36qob_M5ruszgXqL7ltuyT9CaoOOJXMZ5eFYh8M9f8&__tn__=-R">Regreso a clases</a>
+                    <a target="__blank" href="https://business.facebook.com/ChedrauiTabasco/videos/2555440638014453/?__xts__%5B0%5D=68.ARBTppHxn9eZay05OWzgCgst2IC56RbzC_58bavWL8rK59QK5RUgwGQwyfBSVpR4oUfJFf9Dhf88sQa-LtA8q4oIMYuhZJdKXHrGMzKJhEA0Aspq70hYldN2AZJmMyVtYebv8siZsm_fL5etuRxybYuw8QC91aWOkxEz9q8kNfW-fGWsjHIj2-7R066LOCDGZS-UMcv1hiXkbrrWsY9eY7JN19rkzAJLjYht0gWRN6shVpeK_EnLnM0JbjFc-blwfJLWmnLoO1fbZNdHmE5Vs0ljXvk3k5dv94_LLY-gWpya0pYy6x8_0YQ967k7zl6raU7WRkOksaGF6CjdDAAwPzfc7TgEUSOju-IpHtam&__tn__=-R">Aires acondicionados</a>
+                    <a target="__blank" href="https://business.facebook.com/ChedrauiTabasco/videos/2552205045004679/?__xts__%5B0%5D=68.ARALyeLBYwXycxYGWMyFok9AI3nGzYaM4WIV-SYVj-ybf0mPFRTrntWjjcmHmaKPB2XFbnFYTXxHwvU1_iUhH_FOl_YU4SI9G9RG5RqYTCFL53irtt7nrLybeMeNa1w_TyMA8eohyXdXZqGAwEM2Kyozj2qoy8AvWjmEqvoA10DyFYgAF0G3GJpMYr-K5Nl_w2RiXM0NahOJ4-pAR8G9Udqi5sycwXPnkBvL8-CTM4P8aZ1Hw9s-rxuf_FJZ6YmFoLD_S1Q6HmOF_3MWy-_Rd-tzS4I9UIhXg_Wq-ERGAiZMYifrTHHfsGKc2Ieu6kklFo8O98_ao2cLFgs0ctygrVTWp0lwNuoURe2YgzSck84hOWIpM23cpH7SrgjGrg&__tn__=-R">Receta cerdo</a>
+                    <a target="__blank" href="https://business.facebook.com/ChedrauiTabasco/videos/2554366378121879/?__xts__%5B0%5D=68.ARCUWx4Ip8jPshA5tW8Y2DajxfOYzMzG1rK5kSpAQYTmKGtCkSrmTkF_Vzt1KZaHEmgq32fK5EDNSLH8jv7-upHZ4p7ECNDfu7iPwJOXFasro6N0VgT7l8bDRNjkTks18QyKXEFPuUbQZ4uGY3GuIivR9sQpEYhBk0EetOMWUGfuR4nz3Kxe5l_X1iDZ7WZgpGZy1mDsGEmlS9EzGzyd97DYg-MKjQ1xSgYB3TWWUlg8JuW420Z4ifFVc-yQxUrRnaMtd3r_Dgx9QJCgVpVYIwLx5SpG0qKrTtfNv9BCgrWvOuMgnNXwOTY1q1X5lI48szlJo2Baitj2IygxubMWo1PP0pfhNGqxRlB4d-ai&__tn__=-R">Ropa interior</a>
+                    <a target="__blank" href="https://business.facebook.com/ChedrauiTabasco/videos/307121183326208/?__xts__%5B0%5D=68.ARDxdZLs4Nm3sykbuIZ7RRa0XvlAhWS-7f4KexGmnrtCtcyqus-CKMar3FNh4QSuPYio2EFSzVMSBjEWWYklQ3eBnCu7AiPMg8xYbUEEQwszgqqVKKrXFffBBM0Nopy021k7WMYyG_oUsVcvBXk3_LSfNguTZlC0vfrImj7OONyYSy45PmOuT3VJJhEJEsc4M4LWx_iHT80wuM3UnZUGCRp-syulZ5BRsyeNqIXLc8qFg5yKZPsUs7YNF6rVK3XiArojwhrkmZBEG20T1FvUOGO37Uf8EpDm7K_5F4BAxYO7W_aqcWNHStrs5PFWSbXGZG82V3oCpHsp0sLE0OHm5jM19HGM6ltFAG2tiWx8&__tn__=-R">Sistema de apartado</a>
+                    <a target="__blank" href="https://business.facebook.com/ChedrauiTabasco/videos/1299426050254469/?__xts__%5B0%5D=68.ARC73zRXIhl7O36XsLQtBiIOJZZrRwNuCPsfLVszov3yvW-W9g-PseP_oRz_bUTILQiVxuIQ3cCFdicvCGJhYRPAOSiEugRGehhl9fOwzw32lWFEncJYGZGlL906BBAn_ZOqe8MSL40iivNJuLfTWY-K6C599g96J-dnv0Xtfl1TRcJ02nbAgjWSnjH6y3Sw8KGrt1rZBtgqakfk_PbduTgSyNTn4Dhbzx7aF4FV3swXF_WtZEHWmSZZW9xNQzcbM-CK_wIs64acxg5IEILmTAYXkcpPqGf6ywODXvlN3ng__juvJhKbATRNJaISv6FPdqoVAxwiAHOZDYWsPWrg4XwhnPfFewWS1p_yoHtr&__tn__=-R">Chequeo farmacia</a>
+                    <a target="__blank" href="https://web.facebook.com/ChedrauiYucatan/videos/393837614741084/?__xts__%5B0%5D=68.ARApAEF9xg5thoyPJnGXpGhr5-DkWzSYDOs3hsrTjCPrFOcYuN3TIH-b3vuKZb4D4vNz9DbQ1jPCDZKsqOeexMbuwm_P4EIgQrIeOVcX0jzrGU1peco87dyX9Y7QoPrelKW7eLdU4njZKtWZxW1l72XstbB1uCJNwtP3EfGQp4kRus5jByaAJoYp678KGVpIxJYHSgQGXS7raGbjlOFOqmaWieJDh9-v7ZanlV_Gqdl6HOlTKylmpriNCeGi6Ogzqt7rWzGRsCvU0hDFdNiPZBRMxpazARjVrQObLujbhy0ozB-0c2qsyAiirx8PDD_WNXLBa3Dpgk9RxxAurrdLUHMO0bLtxqIFOhQ&__tn__=-R">BUSHMILLS</a>
+                    <a target="__blank" href="https://web.facebook.com/ChedrauiYucatan/videos/2293777217574360/?__xts__%5B0%5D=68.ARCPste3BR-M7XlpUIWkKsniNOLqNtsDALf-mvjoFKj56Do7NrczJgD0Dek7x4xCfK1aVE3mGBFQZ53SQoOOhsjhd572GU__13j8KDR0qtZBh2sCqlwLErRmDwcKIC9AnlvjLMIqT_cWuD8jM6q8ninkdAAqkHm2g5_j5zRW9JIrXu3OKyU8pJAdjKMoufyYEjlkISa7RJ3tYOjfBfJP1QealWpr6bRtOT9l3g7ScFOoRE1dolQVEiOIcrhyvhKI1Ul52G8Xvg-IvPRWuh2J4jrXz3DROy1OwB9ZpZxSmPWhcDZnIDOEDfksQRzxfPAqT3gUKKHGFQFbGwank7GTMfLl3PzN0F8JWaU&__tn__=-R">Roscas</a>
+                    <a target="__blank" href="https://web.facebook.com/ChedrauiYucatan/videos/2239727292935763/?__xts__%5B0%5D=68.ARDkYSxo-vEknuq5ZdQQIeOXM6TSkvq-ekSJpZkJQN2oV2u5KuJbhMPPOVDd89aEWlmRNKCj-ZZfys6jtCPDZKT2pLrtsKeBfZU0VGRPjrj-QRgG_bPkxLBY5IMz4Me_TmP1JX4zeOS9bhMcn8G6taWzoyaZQyI6QK7coxcKQXhWKHbGEfXZU4yBpowOtezf8sxg2oyGmGLC-58LyLBASDaVuG3qwlvb7L3oZmR1jEg297ZZflPLQgqqwGRaKQHCjygAxtR7bUvbxt7x-Kz3DnfYzvDPz-XvPzbaublHZXZ0FTwnLUoTfGTNfbVM0UIE2FQoMq8Ll73TC8LpThUdVWyq3hPUtmpi7-0&__tn__=-R">Equipo de sonido</a>
                 </div>
                 <div id="galerias">
                     <div id="icon-galeria"></div>
-                    <a href="">dfsdf</a>
-                    <a href="">sdfsdf</a>
-                    <a href="">sdfsdf</a>
-                    <a href="">dsfsdf</a>
-                    <a href="">dfsdf</a>
-                    <a href="">sdfsdf</a>
-                    <a href="">dfdsf</a>
-                    <a href="">sdfdsf</a>
-                    <a href="">sdfsdf</a>
-                    <a href="">sdfds</a>
+                    <a target="__blank" href="https://business.facebook.com/ChedrauiTabasco/posts/2779635208928327?__xts__%5B0%5D=68.ARCzmcqb4UbdI0gHsCoTbjcfbeCU6hfq7PjuZmCQv1xy4rfiSIvUSgdEpRzS4AU_PPEniaxpJO0EoU4_rFPDwgvARpfTL2B6q6NjGIiLLM3g3vyXrQDilg6jQuvTu38snobWl31HKxGVGLQaaSwuVgQCwQsnmzZeLjorBTC_SjBAll3G-S2HPI0vQAEkkulWho4jR7aVXjSBRlc7wC9JMNxIhTrd-fwuXfaaiJtj1SuTTalBU9CkaOik8CkyNUbtP2peS9SKWJkJapCornOQd3O3x-g0XXND0roe7GuUymaCgfSSuxfoGCvq9hognQ7r0F13V7xchoxESMD3GMb1ICgpbW0Z&__tn__=-R">MartiMiércoles Tabasco</a>
+                    <a target="__blank" href="https://business.facebook.com/ChedrauiTabasco/posts/2777078155850699?__xts__%5B0%5D=68.ARD6Kiyw9aixZUvltGQM2PcMQtOuhkwHLikKpu7GLUblrVwhog0PvjJ5TL8cXxsaiP0piRtDwQyROY111WDhnqTxkP9Bn6WxKAQOTyAdUeHbQ2S_eYVVcm6eUzlB7lqBW5I_VvlEOgu957fKw2A4Z4GdZngqACJvRQQALB9DW7sAgKOuQlabllzOx7IMGvbTsyDea9PItglIXnzXzj6eNFc2qJwS-ktod1OTQrNPx64Q1vIHuxd3-xd84xANAb-NYyEHm4yvJQ-PTxRi5uclJzcImOT4iAlcDRYRr9CyPaSInnddxewBOCXUDk1ZoiBjTwAOG1cPPvCDJtc48sIxLjpY7BLa&__tn__=-R">Ofertas de fin de semana</a>
+                    <a target="__blank" href="https://business.facebook.com/ChedrauiTabasco/posts/2716116461946869?__xts__%5B0%5D=68.ARD6Y0EcPv1MNSfrHgh4ANJ02HsaZm00Hft3ZUm7RBJdcZ-c6U21lXjPhRK7sawlJbW8h6boUo8pXEVV8Th22C8JKLTTCUQB9CHUB85I4etkWIokfB25fm08nrYHeKDi0_OiiNbcE6ZxXA4EB1u6Zt9a7L7HZ0DdlLW_vMocouo6pC6yPNWfNIcRM1_OdY-eHZ0L41MfDVE84EmUHDRvkr90MifEWyIq8_eZBbMAorfmtsEQ10ugGnnZO99gUxN4stL7TLHYzruZK9tcKUAb3aiip2bIZ7jjs6IhMakqtTIntNoroxOeJ6bEdwfhxRSe0RwNu7d7zL-70QY1_n5CcO2G9xqy&__tn__=-R">Carnes, aves y pescados</a>
+                    <a target="__blank" href="https://business.facebook.com/ChedrauiTabasco/posts/2705015106390338?__xts__%5B0%5D=68.ARA3Huq-pspqgUre2wTiK6LVMU6Bp5TTlt4AxLY12E2XuWJlJHZ-ZNAhHK2B7vDxiLBkY-VMY08F0qZdUT8T9F1kxNRg2SsNoZO5yWfu9jjV5H0bi2ODn01MMJ0DD6ImbJRn56pCt_BnLaUGXI9CsxBNZyZxfU2-ZTjQ0NNxmyBVrP4NENyxzJt2RlAxW9VwAuHWNn8Dd-VKdNX8k8Dx-aZeteVsaNKPFSS9myuJKY4EkmfbFokxasL2yun7iZq-6MnoVzRTAgdHiIaydzronUxA-gGNphBi16aSuaDGfJ4kal0X7Thp1CQ9hnIvSuPeVJbx8_fWTgfksxdje_MpztVPUc-c&__tn__=-R">Ofertas fin de semana</a>
+                    <a target="__blank" href="https://web.facebook.com/ChedrauiYucatan/posts/361593381110675?__xts__%5B0%5D=68.ARAyZrm9Po4iLykcARnqr9PnwKGNvU2U0jTRUO3A4LaINQeN6sAtBASojgkuTQNqTaMZqccWPMysWIwCfRGnCZBULP8Rv1Xo9bsR89abnt7S2xE0ne2QBqTH7gCC_Zs_02w2c0ttZlWtFy1TCOv5ZMFJI8pm3AKoUCe2oY20QxNLcHAWwh957sM0rkHq6Sj-BilnwmZJJxk6tvRPthg93CA3eEeMnyj5L2gaCbsoheeW0vzBE8RHSHLjfIyLy9gSdNLzJnFJ6f3lr9JsRD5drG1ixR-lly34U7eZPfJk3_r4ExVNyjzv8fJxHOX06RkMo9M4XgD0zusRDWfXsngthco&__tn__=-R">Fin de semana Mérida</a>
+                    <a target="__blank" href="https://web.facebook.com/ChedrauiYucatan/posts/355656928370987?__xts__%5B0%5D=68.ARAdaAvGaQlXXygYTPkPM-m6Tun9rIOorYVl7yFO7KRnLSIAOhl5ebcrr-SfPyQC1XLFFKRHSqr_9N6_9AXqPj10F3IGb0fqzJ8Ufn7zcM13WduIMBkN4nbtjBDSYixMjIxFZHVghPqkAHVkaJM-wVGeHMSBYrct2oNu1BejzvT6vwyguAWmHDsAc3ShCzOXVdepLRsUgrTA6RekPISLvj8jPIYPs8lKlq67ytiDejYuuz8FcnrM7F5hlk0zpo3LD9jlL1BRoAAJLS2JDk7E370MeCP1SP1oq2P5OQiaID8ovHjA5iMl3GoLn_esONj9eUaHkTiVOCM3E2nAWKDfgRo&__tn__=-R">Cuesta menos fin de semana</a>
+                    <a target="__blank" href="https://web.facebook.com/ChedrauiYucatan/posts/354799361790077?__xts__%5B0%5D=68.ARAqvQIZ1m2NEOeLZ9sMtKK4ICTWe47s2e8JZueh0nJAL1kETgBjZpHVO3qGk1TBadDmEs5NOPaEpc_OAwColNaxXNxCo0K_aCbnNonRKsfHfgXps5ohCooGtu3Iy93XBC-FZ8ctUQfdbhWFkv4MzKEkLJWiqXbZ11IBRPb3Gaw_EhrjbwQm0Js8G-pUrImvjihdrYM_0XQbLIfHybUa5X1Ks13d-XWa12hAIsd1Y8SaDTHup4fktAgwG-m7SeokManI8nlsa5foMz24mjIJ29AVpbL4W2tjfdRhEPjNc4o9Lhbfg9TCRtXgasc0HIqmcSGf1HybCSGFz-81rhnfQFI&__tn__=-R">Ahorra no me olvides</a>
+                    <a target="__blank" href="https://web.facebook.com/ChedrauiYucatan/posts/347734409163239?__xts__%5B0%5D=68.ARDQ6sIBKtgKbCYp8JmYKTprHm1S9FU8rU6uNo-wY0xO77mVR5KVRFaaBwBQ0eHRqqYfKyiYBezJtiTSY9B5APSO3R-FiFAlk7uatQzoSuuE42ZhsqDJ6ZLKxtWP4SGrzx1QTiuR00TDg_XcogCnXwotMecagGuWLttJr-2JBiM_s-jupMW1-dXC-Xj6CmCeRV4ibbC_K-JkPim7dy3zXO1UnD5KlTFB_5-wcHfbJS3mXGoRiDwQpL_A_8-NuUK7E0SmeVYhRIm1ELcgB3ED4oHtTrhjTqlMWRfedl0vuR2mT3IxtLes8aIz1v_fC2PqBdPrjuufj6cDYTan8Fsrbxw&__tn__=-R">MartiMiércoles Mérida</a>
+                    <a target="__blank" href="https://business.facebook.com/ChedrauiTabasco/posts/2447871398771378?__xts__%5B0%5D=68.ARDWoHVCk7BIYJD-NrI3eUVHUZ8VNTIIl2pIz8kKhrvLzYa97hDSnOfRYvxRjPnVHG7xtFRWFg6Vr0BavI0zA8qIIZ5QNpTYr-DgnqSh14_kZUymCM4rJVnk1jreL_RMlTsylVj9BrEq-3PZxHoi7gn69E2vimvdfR_2Vyq2Ybnsm50sVQX_s8QTBCfoohz3wpOZPDLMrPdyVMR3suOsf8c3pqYF-49AgIO8v4ZtQwXpTPo9Wzek4fY3lXyVCqg0skOr1napA5dGaaKLK_0dprd-JDY56FN3wPYrhODa4YutxIXZaQZfb8ACqjDZzCkHP0Twa-y_Lp2xV6smTYDeYVrSF9Us&__tn__=-R">Favoritos de chonchito</a>
+                    <a target="__blank" href="https://business.facebook.com/ChedrauiTabasco/posts/2673155396242976?__xts__%5B0%5D=68.ARAKiz9xiVuG2Is-6-M9yRIVx9jeF30UR5mZyVAN_vanvQPogo_fS2yl2DqyLA51ZP4pmmLUMpJAslQNhgCIljYFrJ-omMdX6LvsI_J3iP3JA7tIwOVMT4o2RJpII0JOPLTJHM6qIXjgjnoeuWcdAZd42pcdkoV_nZCcosS-JzG7EstjiwP8KQzEvHJnA2o0w-bSMXBXY524eYSi3qHRfPMM7P3kZp72_LE_MXt-jQN5shCfpy2YJ5Vl52Hu5h_wMMPg1JICPbbJ6ySd7iztM8RQKskIMMXtDu7SWSfacGZtW9Pogmg5Ap1YYWNC-kbaj-LqQn_zK8gdfHGfS9OMpAOU2wK0&__tn__=-R">Botanas selecto</a>
                 </div>
             </div>
         </section>
@@ -229,9 +291,7 @@
     <script src="{% static 'js/jq.min.js' %}"></script>
     <script src="{% static 'js/jquery.scrollify.js' %}"></script>
     <script src="{% static 'js/tingle.js' %}"></script>
-    <script src="{% static 'js/lightgallery.min.js' %}"></script>
-    <script src="{% static 'js/lg-thumbnail.min.js' %}"></script>
-    <script src="{% static 'js/lg-fullscreen.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         $(function() {
@@ -286,10 +346,12 @@
 
             // categorias action
             $('#cat-1').on('click', function(){
+                // $("a[href$='"+$(this).attr('data-a')+"']").click();
                 modal.setContent("<video src='{% static 'web/Almacenes/almacenes_01.mp4' %}' width='100%' height='100%' controls></video>");
                 modal.open();
             });
             $('#cat-2').on('click', function(){
+                // $("a[href$='"+$(this).attr('data-a')+"']").click();
                 modal.setContent("<video src='{% static 'web/carnes_aves_pescados/carnes_aves_pescados_01.mp4' %}' width='100%' height='100%' controls></video>");
                 modal.open();
             });
