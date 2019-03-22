@@ -17,6 +17,19 @@
             overflow-y: scroll;
             padding-top: 8vh;
         }
+        .button {
+            background-color: #0465a8;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            float: right;
+            cursor: pointer;
+            margin : 5px;
+        }
     </style>
 </head>
 <body>
@@ -441,9 +454,6 @@
                     $('.over').addClass('tingle-modal--overflow');
                     modal_tobe.setContent("");
                     modal.setContent(categorias[pibote][0]);
-                    console.log(pibote);
-                    console.log(count);
-                    console.log(categorias[pibote].length);
                 },
                 onClose: function() {
                     count = 0;
@@ -451,16 +461,7 @@
                     $.scrollify.instantMove("#6");
                 }
             });
-            modal.addFooterBtn('Anterior', 'tingle-btn tingle-btn--primary', function() {
-                if(count !== 0){
-                    count--;
-                    modal.setContent(categorias[pibote][count]); 
-                }
-                else{
-                    alert('No hay mas elementos');
-                }
-            });
-            modal.addFooterBtn('Siguiente', 'tingle-btn tingle-btn--primary', function() {
+            modal.addFooterBtn('Siguiente', 'button', function() {
                 if(count === categorias[pibote].length-1){
                     alert('No hay mas elementos');
                 }
@@ -468,7 +469,15 @@
                     count++;
                     modal.setContent(categorias[pibote][count]);
                 }
-                console.log(count);
+            });
+            modal.addFooterBtn('Anterior', 'button', function() {
+                if(count !== 0){
+                    count--;
+                    modal.setContent(categorias[pibote][count]); 
+                }
+                else{
+                    alert('No hay mas elementos');
+                }
             });
             
 
