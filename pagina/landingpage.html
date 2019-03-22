@@ -13,6 +13,10 @@
         img{
             width:100%;
         }
+        .tingle-modal{
+            overflow-y: scroll;
+            padding-top: 8vh;
+        }
     </style>
 </head>
 <body>
@@ -410,7 +414,7 @@
                     "<video src='{% static 'web/variedades/VARIEDADES - 01 - vacaciones.mp4' %}' width='100%' height='100%' controls autoplay></video>",
                     "<video src='{% static 'web/variedades/VARIEDADES - 02 - herramientas.mp4' %}' width='100%' height='100%' controls autoplay></video>",
                     "<video src='{% static 'web/variedades/VARIEDADES - 03 - maletas.mp4' %}' width='100%' height='100%' controls autoplay></video>",
-                    "<video src='{% static 'web/variedades/VARIEDADES - 04 - jardinería.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/variedades/VARIEDADES - 04 - jardineria.mp4' %}' width='100%' height='100%' controls autoplay></video>",
                     "<video src='{% static 'web/variedades/VARIEDADES - 05 - tarjetas.mp4' %}' width='100%' height='100%' controls autoplay></video>",
                     "<video src='{% static 'web/variedades/VARIEDADES - 06 - san valentin.mp4' %}' width='100%' height='100%' controls autoplay></video>"
                 ],
@@ -432,12 +436,17 @@
                 stickyFooter: true,
                 closeMethods: ['overlay', 'button', 'escape'],
                 closeLabel: "Close",
-                cssClass: ['custom-class-1', 'custom-class-2'],
+                cssClass: ['over'],
                 onOpen: function() {
+                    $('.over').addClass('tingle-modal--overflow');
                     modal_tobe.setContent("");
                     modal.setContent(categorias[pibote][0]);
+                    console.log(pibote);
+                    console.log(count);
+                    console.log(categorias[pibote].length);
                 },
                 onClose: function() {
+                    count = 0;
                     modal.setContent("");
                     $.scrollify.instantMove("#6");
                 }
@@ -448,19 +457,20 @@
                     modal.setContent(categorias[pibote][count]); 
                 }
                 else{
-                    alert('no hay mas videos');
+                    alert('No hay mas elementos');
                 }
             });
             modal.addFooterBtn('Siguiente', 'tingle-btn tingle-btn--primary', function() {
-                if(count !== categorias[pibote].lenght){
+                if(count === categorias[pibote].length-1){
+                    alert('No hay mas elementos');
+                }
+                else{
                     count++;
                     modal.setContent(categorias[pibote][count]);
                 }
-                else{
-                    alert('no hay mas videos');
-                }
                 console.log(count);
             });
+            
 
             // categorias action
             $('#cat-1').on('click', function(){
