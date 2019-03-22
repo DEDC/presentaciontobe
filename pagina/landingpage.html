@@ -18,17 +18,23 @@
             padding-top: 8vh;
         }
         .button {
-            background-color: #0465a8;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
+            border: solid black;
+            border-width: 0 2px 2px 0;
             display: inline-block;
-            font-size: 16px;
+            padding: 10px;
+            background-color: #f5f5f5;
             float: right;
             cursor: pointer;
-            margin : 5px;
+            margin-left: 10px;
+            outline:0px;
+        }
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
         }
     </style>
 </head>
@@ -461,7 +467,7 @@
                     $.scrollify.instantMove("#6");
                 }
             });
-            modal.addFooterBtn('Siguiente', 'button', function() {
+            modal.addFooterBtn('', 'button right', function() {
                 if(count === categorias[pibote].length-1){
                     alert('No hay mas elementos');
                 }
@@ -470,7 +476,7 @@
                     modal.setContent(categorias[pibote][count]);
                 }
             });
-            modal.addFooterBtn('Anterior', 'button', function() {
+            modal.addFooterBtn('', 'button left', function() {
                 if(count !== 0){
                     count--;
                     modal.setContent(categorias[pibote][count]); 
