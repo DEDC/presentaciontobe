@@ -685,40 +685,59 @@ section:nth-child(10) > #fondo-s10{
 section:nth-child(10) > #cont-enlaces{
     position: absolute;
     display: flex;
-    width: 80%;
-    height: 80%;
-    margin-top: 5%;
-    margin-left: 6%;
-    /* background-color: red; */
+    width: 59%;
+    height: 63%;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 
-section:nth-child(10) > #cont-enlaces .enlace{
-    height: 35%;
-    width: 21%;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    cursor: pointer;
+section:nth-child(10) > #cont-enlaces > #videos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'GothamThin';
+    font-size: 1.3vmax;
+    color: #036ca5;
 }
 
-section:nth-child(10) > #cont-enlaces > #enlace1 {
+section:nth-child(10) > #cont-enlaces > #videos > #icon-video{
     background: url(../d12_enlace_1.png) no-repeat center center;
     background-size: contain;
+    height: 29%;
+    width: 16%;
 }
-section:nth-child(10) > #cont-enlaces > #enlace2 {
+
+section:nth-child(10) > #cont-enlaces > #galerias{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'GothamThin';
+    font-size: 1.3vmax;
+    color: #036ca5;
+}
+
+section:nth-child(10) > #cont-enlaces > #galerias > #icon-galeria{
     background: url(../d12_enlace_2.png) no-repeat center center;
     background-size: contain;
+    height: 29%;
+    width: 16%;
 }
-section:nth-child(10) > #cont-enlaces > #enlace3 {
-    background: url(../d12_enlace_3.png) no-repeat center center;
-    background-size: contain;
+
+section:nth-child(10) > span{
+    position: absolute;
+    font-family: 'GothamBlack';
+    font-size: 3vmax;
+    margin-top: 6%;
+    color: #037bb1;
+    margin-left: 10%;
 }
-section:nth-child(10) > #cont-enlaces > #enlace4 {
-    background: url(../d12_enlace_1.png) no-repeat center center;
-    background-size: contain;
-}
-section:nth-child(10) > #cont-enlaces > #enlace5 {
-    background: url(../d12_enlace_2.png) no-repeat center center;
-    background-size: contain;
+
+section:nth-child(10) > #cont-enlaces a{
+    text-decoration: none;
 }
 /* end section 10 */
 
