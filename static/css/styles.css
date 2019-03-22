@@ -470,6 +470,7 @@ section:nth-child(6) > #cont-cat{
     height: 64%;
     margin-top: 10%;
     margin-left: 8%;
+    z-index: 3;
 }
 
 section:nth-child(6) > #cont-cat .cat{

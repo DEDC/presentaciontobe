@@ -8,14 +8,10 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="{% static 'css/tingle.css' %}">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <title>Presentación TOBE</title>
     <style>
-        .modal{
-            z-index : 9999 !important;
-        }
-        .blocker{
-            z-index: 9999 !important;
+        img{
+            width:100%;
         }
     </style>
 </head>
@@ -98,60 +94,6 @@
             </div>
         </section>
         <section id="6">
-            <a href="#cat1" rel="modal:open" style="display:none"></a>
-            <a href="#cat2" rel="modal:open" style="display:none"></a>
-            <a href="#cat3" rel="modal:open" style="display:none"></a>
-            <a href="#cat4" rel="modal:open" style="display:none"></a>
-            <a href="#cat5" rel="modal:open" style="display:none"></a>
-            <a href="#cat6" rel="modal:open" style="display:none"></a>
-            <div id="cat1" class="modal">
-                <p>Almacenes</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-            <div id="cat2" class="modal">
-                <p>Carnes, aves y pescados</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-            <div id="cat3" class="modal">
-                <p>Thanks for clicking. That felt good.</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-            <div id="cat4" class="modal">
-                <p>Thanks for clicking. That felt good.</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-            <div id="cat5" class="modal">
-                <p>Thanks for clicking. That felt good.</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-            <div id="cat6" class="modal">
-                <p>Thanks for clicking. That felt good.</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-            <div id="cat7" class="modal">
-                <p>Thanks for clicking. That felt good.</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-            <div id="cat8" class="modal">
-                <p>Thanks for clicking. That felt good.</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-            <div id="cat9" class="modal">
-                <p>Thanks for clicking. That felt good.</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-            <div id="cat10" class="modal">
-                <p>Thanks for clicking. That felt good.</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-            <div id="cat11" class="modal">
-                <p>Thanks for clicking. That felt good.</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-            <div id="cat12" class="modal">
-                <p>Thanks for clicking. That felt good.</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
             <span>CATEGORÍAS</span>
             <div id="fondo-sombra-s6" data-aos-delay="500" data-aos="fade-right"></div>
             <div id="fondo-s6" data-aos-delay="500" data-aos="fade-left"></div>
@@ -187,7 +129,7 @@
                 <li>Escritura Creativa</li>
                 <li>Social Media Management</li>
             </ul>
-            <div id="macbook-s7" data-aos-delay="500" data-aos="fade-left"></div>
+            <div id="macbook-s7" data-a="video-tobe" data-aos-delay="500" data-aos="fade-left"></div>
         </section>
         <section id="8">
             <span data-aos-delay="600" data-aos="fade-in">PUBLICACIONES REALIZADAS</span>
@@ -291,7 +233,6 @@
     <script src="{% static 'js/jq.min.js' %}"></script>
     <script src="{% static 'js/jquery.scrollify.js' %}"></script>
     <script src="{% static 'js/tingle.js' %}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         $(function() {
@@ -325,39 +266,268 @@
             $('.scroll-fixed-up').on('click', function() {
                 $.scrollify.previous();
             });
+
+            var count = 0;
+            var pibote = 0;
+            var categorias = [
+                [
+                    "<video src='{% static 'web/almacenes/almacenes_01.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/almacenes/almacenes_04.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/almacenes/almacenes_05.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/almacenes/almacenes_06.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/almacenes/almacenes_07.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/almacenes/almacenes_09.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/almacenes/almacenes_10.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/almacenes/almacenes_11.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/almacenes/almacenes_12.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/almacenes/almacenes_13.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/almacenes/almacenes_14.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/almacenes/almacenes_15.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/almacenes/almacenes_16.mp4' %}' width='100%' height='100%' controls autoplay></video>",    
+                    "<video src='{% static 'web/almacenes/almacenes_17.mp4' %}' width='100%' height='100%' controls autoplay></video>"
+                ],
+                [
+                    "<video src='{% static 'web/carnes_aves_pescados/carnes_aves_pescados_01.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/carnes_aves_pescados/carnes_aves_pescados_02.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/carnes_aves_pescados/carnes_aves_pescados_03.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/carnes_aves_pescados/carnes_aves_pescados_05.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/carnes_aves_pescados/carnes_aves_pescados_06.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/carnes_aves_pescados/carnes_aves_pescados_07.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/carnes_aves_pescados/carnes_aves_pescados_08.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/carnes_aves_pescados/carnes_aves_pescados_09.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/carnes_aves_pescados/carnes_aves_pescados_10.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/carnes_aves_pescados/carnes_aves_pescados_12.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/carnes_aves_pescados/carnes_aves_pescados_13.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/carnes_aves_pescados/carnes_aves_pescados_14.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/carnes_aves_pescados/carnes_aves_pescados_15.mp4' %}' width='100%' height='100%' controls autoplay></video>"
+                ],
+                [
+                    "<video src='{% static 'web/cervezas_vinos_licores/cervezas_vinos_licores_01.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/cervezas_vinos_licores/cervezas_vinos_licores_02.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/cervezas_vinos_licores/cervezas_vinos_licores_03.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/cervezas_vinos_licores/cervezas_vinos_licores_04.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/cervezas_vinos_licores/cervezas_vinos_licores_05.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/cervezas_vinos_licores/cervezas_vinos_licores_06.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/cervezas_vinos_licores/cervezas_vinos_licores_07.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/cervezas_vinos_licores/cervezas_vinos_licores_08.mp4' %}' width='100%' height='100%' controls autoplay></video>"
+                ],
+                [
+                    "<video src='{% static 'web/chequeo_mercado/chequeo_01.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/chequeo_mercado/chequeo_03.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/chequeo_mercado/chequeo_04.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/chequeo_mercado/chequeo_05.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/chequeo_mercado/chequeo_06.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/chequeo_mercado/chequeo_07.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/chequeo_mercado/chequeo_08.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/chequeo_mercado/chequeo_09.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/chequeo_mercado/chequeo_10.mp4' %}' width='100%' height='100%' controls autoplay></video>"
+                ],
+                [
+                    "<img src='{% static 'web/descontones/D_01.jpg' %}' alt='descontones'>",
+                    "<img src='{% static 'web/descontones/D_02.jpg' %}' alt='descontones'>",
+                    "<img src='{% static 'web/descontones/D_03.jpg' %}' alt='descontones'>",
+                    "<img src='{% static 'web/descontones/D_04.jpg' %}' alt='descontones'>",
+                    "<img src='{% static 'web/descontones/D_05.jpg' %}' alt='descontones'>",
+                    "<img src='{% static 'web/descontones/D_06.jpg' %}' alt='descontones'>",
+                    "<img src='{% static 'web/descontones/D_07.jpg' %}' alt='descontones'>",
+                    "<img src='{% static 'web/descontones/D_08.jpg' %}' alt='descontones'>",
+                    "<img src='{% static 'web/descontones/D_09.jpg' %}' alt='descontones'>",
+                    "<img src='{% static 'web/descontones/D_10.jpg' %}' alt='descontones'>"
+                ],
+                [
+                    "<video src='{% static 'web/electronica/electronica_01.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/electronica/electronica_02.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/electronica/electronica_03.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/electronica/electronica_04.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/electronica/electronica_05.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/electronica/electronica_06.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/electronica/electronica_07.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/electronica/electronica_08.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/electronica/electronica_10.mp4' %}' width='100%' height='100%' controls autoplay></video>"
+                ],
+                [
+                    "<img src='{% static 'web/martimiercoles/MM_01.jpg' %}' alt='martimiercoles'>",
+                    "<img src='{% static 'web/martimiercoles/MM_2.jpg' %}' alt='martimiercoles'>",
+                    "<img src='{% static 'web/martimiercoles/MM_03.jpg' %}' alt='martimiercoles'>",
+                    "<img src='{% static 'web/martimiercoles/MM_04.jpg' %}' alt='martimiercoles'>",
+                    "<img src='{% static 'web/martimiercoles/MM_05.jpg' %}' alt='martimiercoles'>",
+                    "<img src='{% static 'web/martimiercoles/MM_06.jpg' %}' alt='martimiercoles'>",
+                    "<video src='{% static 'web/martimiercoles/MM_07.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/martimiercoles/MM_08.mp4' %}' width='100%' height='100%' controls autoplay></video>"
+                ],
+                [
+                    "<video src='{% static 'web/panaderia/panaderia_01.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/panaderia/panaderia_02.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/panaderia/panaderia_03.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/panaderia/panaderia_04.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/panaderia/panaderia_05.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/panaderia/panaderia_06.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/panaderia/panaderia_07.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/panaderia/panaderia_08.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/panaderia/panaderia_09.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/panaderia/panaderia_10.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/panaderia/panaderia_11.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/panaderia/panaderia_12.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/panaderia/panaderia_13.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/panaderia/panaderia_15.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/panaderia/panaderia_16.mp4' %}' width='100%' height='100%' controls autoplay></video>"
+                ],
+                [
+                    "<video src='{% static 'web/ropa/ropa_01.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/ropa/ropa_02.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/ropa/ropa_03.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/ropa/ropa_04.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/ropa/ropa_05.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/ropa/ropa_06.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/ropa/ropa_07.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/ropa/ropa_08.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/ropa/ropa_09.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/ropa/ropa_10.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/ropa/ropa_11.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/ropa/ropa_12.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/ropa/ropa_13.mp4' %}' width='100%' height='100%' controls autoplay></video>"
+                ],
+                [
+                    "<img src='{% static 'web/selecto/selecto_01.jpg' %}' alt='selecto'>",
+                    "<img src='{% static 'web/selecto/selecto_02.jpg' %}' alt='selecto'>",
+                    "<img src='{% static 'web/selecto/selecto_03.jpg' %}' alt='selecto'>",
+                    "<img src='{% static 'web/selecto/selecto_04.jpg' %}' alt='selecto'>",
+                    "<img src='{% static 'web/selecto/selecto_05.jpg' %}' alt='selecto'>",
+                    "<img src='{% static 'web/selecto/selecto_06.jpg' %}' alt='selecto'>",
+                    "<img src='{% static 'web/selecto/selecto_07.jpg' %}' alt='selecto'>",
+                    "<img src='{% static 'web/selecto/selecto_08.jpg' %}' alt='selecto'>",
+                    "<img src='{% static 'web/selecto/selecto_09.jpg' %}' alt='selecto'>",
+                    "<video src='{% static 'web/selecto/selecto_92.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/selecto/selecto_93.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/selecto/selecto_94.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/selecto/selecto_95.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/selecto/selecto_96.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/selecto/selecto_97.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/selecto/selecto_98.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/selecto/selecto_99.mp4' %}' width='100%' height='100%' controls autoplay></video>"
+                ],
+                [
+                    "<video src='{% static 'web/variedades/VARIEDADES - 01 - vacaciones.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/variedades/VARIEDADES - 02 - herramientas.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/variedades/VARIEDADES - 03 - maletas.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/variedades/VARIEDADES - 04 - jardinería.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/variedades/VARIEDADES - 05 - tarjetas.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/variedades/VARIEDADES - 06 - san valentin.mp4' %}' width='100%' height='100%' controls autoplay></video>"
+                ],
+                [
+                    "<video src='{% static 'web/solicitud_especifica/solicitud_especifica_01.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/solicitud_especifica/solicitud_especifica_02.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/solicitud_especifica/solicitud_especifica_03.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/solicitud_especifica/solicitud_especifica_04.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/solicitud_especifica/solicitud_especifica_05.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/solicitud_especifica/solicitud_especifica_06.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/solicitud_especifica/solicitud_especifica_07.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/solicitud_especifica/solicitud_especifica_08.mp4' %}' width='100%' height='100%' controls autoplay></video>",
+                    "<video src='{% static 'web/solicitud_especifica/solicitud_especifica_09.mp4' %}' width='100%' height='100%' controls autoplay></video>"
+                ]
+            ]
+
             var modal = new tingle.modal({
+                footer: true,
+                stickyFooter: true,
+                closeMethods: ['overlay', 'button', 'escape'],
+                closeLabel: "Close",
+                cssClass: ['custom-class-1', 'custom-class-2'],
+                onOpen: function() {
+                    modal_tobe.setContent("");
+                    modal.setContent(categorias[pibote][0]);
+                },
+                onClose: function() {
+                    modal.setContent("");
+                    $.scrollify.instantMove("#6");
+                }
+            });
+            modal.addFooterBtn('Anterior', 'tingle-btn tingle-btn--primary', function() {
+                if(count !== 0){
+                    count--;
+                    modal.setContent(categorias[pibote][count]); 
+                }
+                else{
+                    alert('no hay mas videos');
+                }
+            });
+            modal.addFooterBtn('Siguiente', 'tingle-btn tingle-btn--primary', function() {
+                if(count !== categorias[pibote].lenght){
+                    count++;
+                    modal.setContent(categorias[pibote][count]);
+                }
+                else{
+                    alert('no hay mas videos');
+                }
+                console.log(count);
+            });
+
+            // categorias action
+            $('#cat-1').on('click', function(){
+                pibote = 0;
+                modal.open();
+            });
+            $('#cat-2').on('click', function(){
+                pibote = 1;
+                modal.open();
+            });
+            $('#cat-3').on('click', function(){
+                pibote = 2;
+                modal.open();
+            });
+            $('#cat-4').on('click', function(){
+                pibote = 3;
+                modal.open();
+            });
+            $('#cat-5').on('click', function(){
+                pibote = 4;
+                modal.open();
+            });
+            $('#cat-6').on('click', function(){
+                pibote = 5;
+                modal.open();
+            });
+            $('#cat-7').on('click', function(){
+                pibote = 6;
+                modal.open();
+            });
+            $('#cat-8').on('click', function(){
+                pibote = 7;
+                modal.open();
+            });
+            $('#cat-9').on('click', function(){
+                pibote = 8;
+                modal.open();
+            });
+            $('#cat-10').on('click', function(){
+                pibote = 9;
+                modal.open();
+            });
+            $('#cat-11').on('click', function(){
+                pibote = 10;
+                modal.open();
+            });
+            $('#cat-12').on('click', function(){
+                pibote = 11;
+                modal.open();
+            });
+            var modal_tobe = new tingle.modal({
                 footer: false,
                 stickyFooter: false,
                 closeMethods: ['overlay', 'button', 'escape'],
                 closeLabel: "Close",
                 cssClass: ['custom-class-1', 'custom-class-2'],
                 onOpen: function() {
-                    $('video').get(0).play();
+                    modal.setContent("");
                 },
                 onClose: function() {
+                    modal_tobe.setContent("");
                     $.scrollify.instantMove("#7");
-                    $('video').get(0).pause();
                 }
             });
             $('#macbook-s7').on('click', function(){
-                modal.setContent("<video src='{% static 'tobe.mp4' %}' width='100%' height='100%' controls></video>");
-                modal.open();
-            });
-
-            // categorias action
-            $('#cat-1').on('click', function(){
-                // $("a[href$='"+$(this).attr('data-a')+"']").click();
-                modal.setContent("<video src='{% static 'web/Almacenes/almacenes_01.mp4' %}' width='100%' height='100%' controls></video>");
-                modal.open();
-            });
-            $('#cat-2').on('click', function(){
-                // $("a[href$='"+$(this).attr('data-a')+"']").click();
-                modal.setContent("<video src='{% static 'web/carnes_aves_pescados/carnes_aves_pescados_01.mp4' %}' width='100%' height='100%' controls></video>");
-                modal.open();
-            });
-            $('#cat-3').on('click', function(){
-                modal.setContent("<video src='{% static 'web/cervezas_vinos/cervezas_vinos_licores_01.mp4' %}' width='100%' height='100%' controls></video>");
-                modal.open();
+                modal_tobe.setContent("<video src='{% static 'tobe.mp4' %}' width='100%' height='100%' controls autoplay></video>");
+                modal_tobe.open();
             });
         });
     </script>
