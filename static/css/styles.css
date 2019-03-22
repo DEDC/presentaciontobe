@@ -457,7 +457,7 @@ section:nth-child(6) > #mano-s6{
     background-size: contain;
     width: 38%;
     height: 87%;
-    margin-top: 6%;
+    margin-top: 8%;
     margin-left: 61%;
     z-index: 2;
 }
@@ -527,6 +527,16 @@ section:nth-child(6) > #cont-cat > #cat-9{
 
 section:nth-child(6) > #cont-cat > #cat-10{
     background: url(../d11_cat_10.png) no-repeat center center;
+    background-size: contain;
+}
+
+section:nth-child(6) > #cont-cat > #cat-11{
+    background: url(../d11_cat_11.png) no-repeat center center;
+    background-size: contain;
+}
+
+section:nth-child(6) > #cont-cat > #cat-12{
+    background: url(../d11_cat_12.png) no-repeat center center;
     background-size: contain;
 }
 /* end section 6 */
